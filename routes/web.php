@@ -19,3 +19,5 @@ Route::get('/', function () {
 });
 
 Route::get('/banner', [BannerController::class, 'index']);
+Route::get('/banner/create', [BannerController::class, 'create']);
+Route::get('/banner/store', [BannerController::class, 'store']);

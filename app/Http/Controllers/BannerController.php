@@ -53,6 +53,7 @@ class BannerController extends Controller
     public function show($id)
     {
         $data['banner'] = Banner::first();
+        return view('show-banner',compact('data'));
     }
 
     /**

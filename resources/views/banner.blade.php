@@ -18,7 +18,16 @@
     <!-- place navbar here -->
   </header>
   <main>
-    Ini page banner
+    <table class="table table-light">
+      <tbody>
+        @foreach ($banners as $item)
+        <tr>
+          <td>{{$item->title}}</td>
+          <td>{{$item->image}}</td>
+        </tr>            
+        @endforeach
+      </tbody>
+    </table>
   </main>
   <footer>
     <!-- place footer here -->

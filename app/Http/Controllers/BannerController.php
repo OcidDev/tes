@@ -25,7 +25,7 @@ class BannerController extends Controller
      */
     public function create()
     {
-        //
+        return view('create-baner');
     }
 
     /**
@@ -36,7 +36,12 @@ class BannerController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $validated = $request->validate([
+            'title' => 'required|string',
+            'image' => 'required|image'
+        ]);
+        banner::create($validated);
+        redirect ('/');
     }
 
     /**

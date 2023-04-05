@@ -1,2 +1,1 @@
-bang cahya
-baris kedua gitu
+Viki x N*** h******
